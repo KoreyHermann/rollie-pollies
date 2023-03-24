@@ -1,0 +1,29 @@
+{
+  "name": "project-2-repo",
+  "version": "1.0.0",
+  "description": "This is a web application that allows users to create, view, update, and delete polls. The app is built using Node.js and Express.js, and uses Sequelize ORM to interact with a MySQL database hosted on Heroku Postgres.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoreyHermann/project-2-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoreyHermann/project-2-repo/issues"
+  },
+  "homepage": "https://github.com/KoreyHermann/project-2-repo#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "express-session": "^1.17.3"
+  }
+}
