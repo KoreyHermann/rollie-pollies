@@ -1,0 +1,10 @@
+<div>
+  <h2>Recent Polls</h2>
+  {{#each polls}}
+    <div>
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+      <a href="/pollData/{{id}}">Vote now</a>
+    </div>
+  {{/each}}
+</div>
