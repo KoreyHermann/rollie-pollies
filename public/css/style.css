@@ -9,6 +9,7 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+  
   }
   
   .container {
@@ -57,7 +58,7 @@
   main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
   }
@@ -127,3 +128,6 @@
     line-height: 1.5;
   }
   
+  .greeting {
+    align-items: center;
+  }

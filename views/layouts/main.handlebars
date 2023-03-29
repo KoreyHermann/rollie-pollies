@@ -24,12 +24,35 @@
     <aside>
       <h2></h2>
     </aside>
-    <div class="gallery">
+    <div class="greeting">
       {{{body}}}
     </div>
   </main>
   {{#if loggedIn}}
-  <script src="../../public/js/logout.js"></script>
+
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/api/users/login">Login</a>
+    <div>
+      <form class="poll-form">
+         <div class="form-group">
+        <label for="question-form">Please Enter your question here:</label>
+        <input class="form-input" type="text" id="question" />
+      </div>
+      <div class="poll-form">
+        <label for="answer1-form">Option 1:</label>
+        <input class="form-input" type="text" id="answer1" />
+      </div>
+      <div class="poll-form">
+        <label for="answer2-form">Option 2:</label>
+        <input class="form-input" type="text" id="answer2" />
+      </div>
+      <div class="poll-form">
+        <button class="btn btn-primary" type="submit">Create Poll</button>
+      </div>
+      </form>
+    </div>
+    <script src="nodemo../../public/js/logout.js"></script>
   {{/if}}
 </body>
 
