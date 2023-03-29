@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-exports.getLoginPage = ('/login', (req, res) => {
+exports.getLoginPage = ( (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
       return;
