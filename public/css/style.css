@@ -133,6 +133,7 @@
   }
 
   .poll-form {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -140,6 +141,8 @@
     padding: 20px;
     width: 40%;
     margin-right: 20px;
+    margin-left: 20px;
+    float: left;
   }
   
   .poll-form label {
@@ -170,3 +173,24 @@
     background-color: #7B3DB9;
   }
   
+ 
+.poll-card {
+  border: 2px solid purple;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  float: left; 
+  width: 40%;
+  box-sizing: border-box;
+  margin-left: 20px; 
+  
+}
+  
+  #poll-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
