@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Polling-App</title>
   <link rel="stylesheet" href="/css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
   </div>
   <div class="card-body">
     <div id="poll-answers"></div>
-    <canvas id="poll-chart"></canvas>
+    <canvas></canvas>
   </div>
 </div>
 
@@ -65,8 +66,9 @@
 
 
   {{/if}}
-      <script src="/js/polls.js"></script>
-    <script src="/js/logout.js"></script>
+
+  <script src="/js/polls.js"></script>
+  <script src="/js/logout.js"></script>
 </body>
 
 </html>

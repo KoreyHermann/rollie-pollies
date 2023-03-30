@@ -194,3 +194,32 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .poll-card button {
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .poll-card button:hover {
+    background-color: purple;
+  }
+
+  .poll-card button {
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: black; 
+    border: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .poll-card button:hover {
+    background-color: purple;
+    color: white; 
+  }
