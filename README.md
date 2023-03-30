@@ -17,7 +17,6 @@ Sequelize ORM (Protects Sensitive Login Info and API Keys)
 Heroku (Used to deploy the application)
 Chart.js (Used to visualize Data)
 Moment.js (Displaying time and date on created polls)
-TailwindCSS (Used to create a polished UI)
 
 
 #License
