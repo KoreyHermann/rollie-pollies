@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <h1>Polling-App</h1>
+    <h1>Rollie Pollies</h1>
   </header>
   <nav>
     <a href="/">Home</a>
@@ -30,37 +30,39 @@
   </main>
   {{#if loggedIn}}
 
-    <div>
-      <form class="poll-form">
-        <div class="form-group">
-          <label for="question-form">Please Enter your question here:</label>
-          <input class="form-input" type="text" id="question" />
-        </div>
-        <div class="poll-form">
-          <label for="answer1-form">Option 1:</label>
-          <input class="form-input" type="text" id="answer1" />
-        </div>
-        <div class="poll-form">
-          <label for="answer2-form">Option 2:</label>
-          <input class="form-input" type="text" id="answer2" />
-        </div>
-        <div class="poll-form">
-          <button class="btn btn-primary" type="submit">Create Poll</button>
-        </div>
-      </form>
+<div>
+  <form class="poll-form">
+    <div class="form-group">
+      <label for="question-form">Please Enter your question here:</label>
+      <input class="form-input" type="text" id="question" />
     </div>
-
-{{#each this}}
-    <div id="poll-card" class="card" style="display:none;">
-      <h3 id="card-question">{{question}}</h3>
-      <ul id="card-answers">
-        <li id="card-answer1">{{answer1}}</li>
-        <li id="card-answer2">{{answer2}}</li>
-      </ul>
+    <div class="poll-form">
+      <label for="answer1-form">Option 1:</label>
+      <input class="form-input" type="text" id="answer1" />
     </div>
-{{/each}}
+    <div class="poll-form">
+      <label for="answer2-form">Option 2:</label>
+      <input class="form-input" type="text" id="answer2" />
+    </div>
+    <div class="poll-form">
+      <button class="btn btn-primary" type="submit" id="addPollbutton">Create Poll</button>
+    </div>
+  </form>
+</div>
 
-    {{else}}
+<div id="poll-card" class="card" style="display:none;">
+  <div class="card-header">
+    <h3 id="poll-question"></h3>
+  </div>
+  <div class="card-body">
+    <div id="poll-answers"></div>
+    <canvas id="poll-chart"></canvas>
+  </div>
+</div>
+
+<ul id="poll-list"></ul>
+
+
 
   {{/if}}
       <script src="/js/polls.js"></script>
