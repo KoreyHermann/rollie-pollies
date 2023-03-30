@@ -30,11 +30,6 @@
   </main>
   {{#if loggedIn}}
 
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/api/users/login">Login</a>
-
-
     <div>
       <form class="poll-form">
         <div class="form-group">
@@ -55,17 +50,21 @@
       </form>
     </div>
 
+{{#each this}}
     <div id="poll-card" class="card" style="display:none;">
-      <h3 id="card-question"></h3>
+      <h3 id="card-question">{{question}}</h3>
       <ul id="card-answers">
-        <li id="card-answer1"></li>
-        <li id="card-answer2"></li>
+        <li id="card-answer1">{{answer1}}</li>
+        <li id="card-answer2">{{answer2}}</li>
       </ul>
     </div>
+{{/each}}
 
-    <script src="../../utils/polls.js"></script>
-    <script src="nodemo../../public/js/logout.js"></script>
+    {{else}}
+
   {{/if}}
+      <script src="/js/polls.js"></script>
+    <script src="/js/logout.js"></script>
 </body>
 
 </html>
