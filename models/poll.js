@@ -45,4 +45,3 @@ Poll.init(
 
 module.exports = Poll;
 
-//bababooey

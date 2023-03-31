@@ -26,4 +26,3 @@ List.init(
 
 module.exports = List;
 
-//bababooey
