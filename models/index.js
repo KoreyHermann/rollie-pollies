@@ -1,6 +1,6 @@
-const User = require('/user');
-const List = require('/list');
-const Poll = require('/poll');
+const User = require('./User');
+const List = require('./List');
+const Poll = require('./Poll');
 
 List.hasMany(Poll, {
   foreignKey: 'list_id',
